@@ -398,6 +398,7 @@ After Workflow 3 generates the paper, `/auto-paper-improvement-loop` runs 2 roun
 | 📊 [`paper-figure`](skills/paper-figure/SKILL.md) | Publication-quality matplotlib/seaborn plots from experiment data, with LaTeX snippets | Optional |
 | ✍️ [`paper-write`](skills/paper-write/SKILL.md) | Section-by-section LaTeX generation with ICLR/NeurIPS/ICML templates. Anti-hallucination BibTeX via DBLP/CrossRef | Yes |
 | 📑 [`paper-citation-refiner`](skills/paper-citation-refiner/SKILL.md) | Generate and refine .bib files, review all citation information throughout the manuscript, and perform De‑AI text polishing. | Yes |
+| 📐 [`paper-citation-adder`](skills/paper-citation-adder/SKILL.md) | Insert inline citations using DBLP/CrossRef, generate verified .bib, add TODOs for unresolved cites. | No |
 | 🔨 [`paper-compile`](skills/paper-compile/SKILL.md) | Compile LaTeX to PDF, auto-fix errors, submission readiness checks | No |
 | 🔄 [`auto-paper-improvement-loop`](skills/auto-paper-improvement-loop/SKILL.md) | 2-round content review + format check loop on generated paper (4/10 → 8.5/10) | Yes |
 | 📝 [`paper-writing`](skills/paper-writing/SKILL.md) | **Workflow 3 pipeline**: paper-plan → paper-figure → paper-write → paper-compile → auto-paper-improvement-loop | Yes |
