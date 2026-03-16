@@ -1,6 +1,6 @@
 ---
 name: paper-citation-refiner
-description: "Generate and refine .bib files from existing LaTeX documents, review all citation information throughout the manuscript, and perform De-AI text polishing. Use when user says \"生成参考文献\", \"完善引用\", \"De-AI\", or \"check citations\"."
+description: "Generate and refine .bib files from existing LaTeX documents, review all citation information throughout the manuscript. Use when user says \"生成参考文献\", \"完善引用\", or \"check citations\"."
 argument-hint: [tex-directory-or-main-file]
 allowed-tools: Bash(*), Read, Write, Edit, Grep, Glob, Agent, WebSearch, WebFetch, mcp__codex__codex, mcp__codex__codex-reply
 ---
