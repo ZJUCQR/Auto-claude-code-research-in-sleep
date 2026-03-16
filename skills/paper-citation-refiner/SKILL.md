@@ -86,7 +86,7 @@ This prevents bib bloat (e.g., 948 lines → 215 lines in testing).
 
 ### Step 3: De-AI Polish (去 AI 痕迹)
 
-Scan all `.tex` files (especially abstract, introduction, and related work) and rewrite to eliminate AI writing signatures.
+Scan all `.tex` files and rewrite to eliminate AI writing signatures.
 
 **Strictly Avoid (Lexical):**
 - delve
@@ -104,7 +104,7 @@ Scan all `.tex` files (especially abstract, introduction, and related work) and 
 - Rule-of-three lists without substantive meaning
 - Repetitive transitions (e.g., "It is worth noting that", "Importantly")
 
-### Step 4: Model Review & Iteration (Related Work)
+### Step 4: Model Review & Iteration
 
 Send the all the files to the REVIEWER_MODEL for critical analysis:
 
