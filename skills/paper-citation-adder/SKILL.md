@@ -51,12 +51,14 @@ Analyze existing LaTeX source files in **$ARGUMENTS**, insert missing citations 
 curl -sLH "Accept: application/x-bibtex" "https://doi.org/{doi}"
 ```
 
-​	**Step C: Mark `[VERIFY]` (last resort)**
-If both DBLP and CrossRef return nothing, mark the entry with `% [VERIFY]` comment. Do NOT fabricate.
+​	**Step C: Unresolved citations handling**
+If both DBLP and CrossRef return nothing, add a `% [VERIFY]` comment to the entry and insert a `TODO` comment next to the corresponding `\cite{}` in the `.tex` file for manual review, e.g.:
 
-**Step D: Unresolved citations**
-- If a citation cannot be resolved via DBLP or CrossRef, insert a `TODO` comment next to the `\cite{}` in the `.tex` file indicating manual review is required.
-- Example: `\cite{missing2024}` → `\cite{missing2024} % TODO: verify citation`.
+```tex
+\cite{missing2024} % TODO: verify citation % [VERIFY]
+```
+
+Do NOT fabricate any BibTeX entries.
 
 
 1. **NEVER fabricate BibTeX entries**. If an entry cannot be verified via DBLP or CrossRef, find an alternative paper instead of faking metadata.
